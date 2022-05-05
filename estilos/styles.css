@@ -31,4 +31,10 @@ body {
 .header__logo-titulo {
   display: none;
 }
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 /*# sourceMappingURL=styles.css.map */
