@@ -1,3 +1,32 @@
 @import"responsive";
 
+// NAVBAR
+
+// header movil responsive
+
+.header{
+  background-image: url("../imagenes/fondo.png");
+  background-color: #FFD9ED80;
+  background-size:cover;
+  height: 167px;
+  width: 100%;
+
+  // LOGO
+
+  &__logo{
+    text-align:center;
+  }
+
+  &__logo-imagen{
+    width:142px;
+    height: 88px;
+  }
+
+  &__logo-titulo {
+    display:none;
+  }
+
+}
+
+
 

@@ -11,49 +11,24 @@ body {
   list-style-type: none;
 }
 
-/*NAVBAR*/
-/*header movil responsive*/
-h1 {
-  display: inline;
-}
-
 .header {
+  background-image: url("../imagenes/fondo.png");
   background-color: #FFD9ED80;
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "none logo none" "menu none menu";
-  -ms-grid-rows: 70% 30%;
-      grid-template-rows: 70% 30%;
-  -ms-grid-columns: 40% 10% 40%;
-      grid-template-columns: 40% 10% 40%;
-  /*LOGO*/
-  /*MENU*/
+  background-size: cover;
+  height: 167px;
+  width: 100%;
 }
 
 .header__logo {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: logo;
-  margin: 1rem;
-  width: 142px;
-  height: 88px;
   text-align: center;
 }
 
-.header__menu {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: menu;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 16px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 1rem;
+.header__logo-imagen {
+  width: 142px;
+  height: 88px;
+}
+
+.header__logo-titulo {
+  display: none;
 }
 /*# sourceMappingURL=styles.css.map */
