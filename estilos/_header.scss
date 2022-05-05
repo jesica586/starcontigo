@@ -7,8 +7,8 @@
 .header{
   background-image: url("../imagenes/fondo.png");
   background-color: #FFD9ED80;
-  background-size:cover;
-  height: 6.5rem;
+  background-size: cover;
+  height: auto;
   width: 100%;
 
   // LOGO
@@ -29,32 +29,42 @@
   // MENÚ
 
   &__menu{
-    display: flex;
     font-size: 0.55rem;
+    display: grid;
+    grid-template-columns: auto auto;
   }
 
   &__menu1{
     display:flex;
-    margin-right: 2rem;
-    margin-left: 0.5rem;
+    justify-content: flex-start;
+    margin: 0 1rem 0.5rem 1rem;
   }
 
   &__menu2{
     display:flex;
-    margin-right: 0.5rem
+    justify-content: flex-end;
+    margin: 0 1rem 0.5rem 1rem;
   }
 
-  &__menu-categorias{
-    padding: 0.3rem;
+  &__menu-items{
+    padding: 0.2rem;
   }
 
-  
-  /*header tablet responsive*/
+  // header tablet responsive
   
   @include tablet {
-    
+    height: 9.5rem;
+
+    &__logo-imagen{
+      width: 7rem;
+      margin: 1rem;
+    }
+
+    &__menu{
+      font-size: 1.1rem;
+    }
   }
-  /*header laptop responsive*/
+  // header laptop responsive
 }
 
 
