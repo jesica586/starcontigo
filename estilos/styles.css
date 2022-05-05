@@ -1,19 +1,21 @@
 * {
   margin: 0;
   padding: 0;
-  color: #141414;
+  color: #141414 !important;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Poiret One', sans-serif;
   list-style-type: none;
+  text-decoration: none !important;
 }
 
 .header {
   background-image: url("../imagenes/fondo.png");
   background-color: #FFD9ED80;
   background-size: cover;
-  height: 167px;
+  height: 6.5rem;
   width: 100%;
+  /*header tablet responsive*/
+  /*header laptop responsive*/
 }
 
 .header__logo {
@@ -21,8 +23,8 @@
 }
 
 .header__logo-imagen {
-  width: 142px;
-  height: 88px;
+  width: 5.5rem;
+  margin: 0.5rem;
 }
 
 .header__logo-titulo {
@@ -33,5 +35,25 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 0.55rem;
+}
+
+.header__menu1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 2rem;
+  margin-left: 0.5rem;
+}
+
+.header__menu2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 0.5rem;
+}
+
+.header__menu-categorias {
+  padding: 0.3rem;
 }
 /*# sourceMappingURL=styles.css.map */
