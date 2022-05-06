@@ -31,7 +31,7 @@
 }
 
 .header__logo-imagen {
-  width: 5rem;
+  width: 20vw;
   margin: 0.5rem;
 }
 
@@ -66,8 +66,8 @@
 }
 
 .header__menu-items {
-  padding: 0.2rem;
-  font-size: 0.6rem;
+  padding: 1.5vw;
+  font-size: 2.4vw;
   margin-bottom: 0.5rem;
 }
 
