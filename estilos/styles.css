@@ -16,10 +16,10 @@
   display: -ms-grid;
   display: grid;
       grid-template-areas: "logo logo logo" "menu1 none menu2";
-  -ms-grid-rows: 5rem 1.5rem;
-      grid-template-rows: 5rem 1.5rem;
-  -ms-grid-columns: 55% 5% auto;
-      grid-template-columns: 55% 5% auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
 }
 
 .header__logo {
@@ -31,7 +31,7 @@
 }
 
 .header__logo-imagen {
-  width: 5.5rem;
+  width: 5rem;
   margin: 0.5rem;
 }
 
@@ -68,6 +68,7 @@
 .header__menu-items {
   padding: 0.2rem;
   font-size: 0.6rem;
+  margin-bottom: 0.5rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -75,15 +76,26 @@
         grid-template-areas: "menu1 logo menu2";
     -ms-grid-rows: 5rem;
         grid-template-rows: 5rem;
-    -ms-grid-columns: 45% 20% auto;
-        grid-template-columns: 45% 20% auto;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
+  .header__logo-imagen {
+    width: 6rem;
+    margin: 0.5rem;
+  }
   .header__menu-items {
     padding: 0.5rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    margin: 1rem 0 0 0;
+  }
+  .header__menu1 {
+    margin-left: 3rem;
+  }
+  .header__menu2 {
+    margin-right: 3rem;
   }
 }
 
@@ -103,10 +115,10 @@
     font-size: 1rem;
   }
   .header__menu1 {
-    margin-left: 3rem;
+    margin-left: 4rem;
   }
   .header__menu2 {
-    margin-right: 3rem;
+    margin-right: 4rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
