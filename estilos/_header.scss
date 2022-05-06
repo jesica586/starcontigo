@@ -4,68 +4,73 @@
 
 // header movil responsive
 
-.header{
+.header {
   background-image: url("../imagenes/fondo.png");
   background-color: #FFD9ED80;
   background-size: cover;
   height: auto;
   width: 100%;
+  display: grid;
+  grid-template-areas:
+    "logo logo logo"
+    "menu1 none menu2";
+  grid-template-rows: 5rem 1.5rem;
+  grid-template-columns: 55% 5% auto;
 
   // LOGO
 
-  &__logo{
-    text-align:center;
+  &__logo {
+    grid-area: logo;
+    text-align: center;
   }
 
-  &__logo-imagen{
+  &__logo-imagen {
     width: 5.5rem;
     margin: 0.5rem;
   }
 
   &__logo-titulo {
-    display:none;
+    display: none;
   }
 
   // MENÚ
 
-  &__menu{
-    font-size: 0.55rem;
-    display: grid;
-    grid-template-columns: auto auto;
-  }
-
-  &__menu1{
-    display:flex;
+  &__menu1 {
+    display: flex;
     justify-content: flex-start;
-    margin: 0 1rem 0.5rem 1rem;
+    grid-area: menu1;
+    margin-left: 0.6rem;
   }
 
-  &__menu2{
-    display:flex;
+  &__menu2 {
+    display: flex;
     justify-content: flex-end;
-    margin: 0 1rem 0.5rem 1rem;
+    grid-area: menu2;
+    margin-right: 0.6rem;
   }
 
-  &__menu-items{
+  &__menu-items {
     padding: 0.2rem;
+    font-size: 0.6rem;
   }
 
   // header tablet responsive
-  
+
   @include tablet {
-    height: 9.5rem;
+    grid-template-areas:
+      "menu1 logo menu2";
+    grid-template-rows: 5rem;
+    grid-template-columns: 55% 5% auto;
+    align-items: center;
 
-    &__logo-imagen{
-      width: 7rem;
-      margin: 1rem;
+
+    &__menu-items {
+      padding: 0.5rem;
+      font-size: 1rem;
     }
 
-    &__menu{
-      font-size: 1.1rem;
-    }
+
+    // header laptop responsive
   }
-  // header laptop responsive
+
 }
-
-
-

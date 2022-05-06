@@ -14,9 +14,20 @@
   background-size: cover;
   height: auto;
   width: 100%;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "logo logo logo" "menu1 none menu2";
+  -ms-grid-rows: 5rem 1.5rem;
+      grid-template-rows: 5rem 1.5rem;
+  -ms-grid-columns: 55% 5% auto;
+      grid-template-columns: 55% 5% auto;
 }
 
 .header__logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: logo;
   text-align: center;
 }
 
@@ -29,14 +40,6 @@
   display: none;
 }
 
-.header__menu {
-  font-size: 0.55rem;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
-}
-
 .header__menu1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,7 +47,10 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin: 0 1rem 0.5rem 1rem;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: menu1;
+  margin-left: 0.6rem;
 }
 
 .header__menu2 {
@@ -54,23 +60,34 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin: 0 1rem 0.5rem 1rem;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: menu2;
+  margin-right: 0.6rem;
 }
 
 .header__menu-items {
   padding: 0.2rem;
+  font-size: 0.6rem;
 }
 
 @media only screen and (min-width: 768px) {
   .header {
-    height: 9.5rem;
+        grid-template-areas: "menu1 logo menu2";
+    -ms-grid-rows: 5rem;
+        grid-template-rows: 5rem;
+    -ms-grid-columns: 55% 5% auto;
+        grid-template-columns: 55% 5% auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .header__logo-imagen {
-    width: 7rem;
-    margin: 1rem;
+  .header__menu-items {
+    font-size: 1rem;
   }
-  .header__menu {
-    font-size: 1.1rem;
+  .header__menu1 {
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
 }
 /*# sourceMappingURL=styles.css.map */
