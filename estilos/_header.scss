@@ -1,7 +1,5 @@
 @import"responsive";
 
-// NAVBAR
-
 // header movil responsive
 
 .header {
@@ -74,12 +72,12 @@
     &__menu1 {
       margin-left: 3rem;
     }
-  
+
     &__menu2 {
       margin-right: 3rem;
     }
   }
-  
+
   // header laptop responsive
 
   @include desktop {
@@ -99,7 +97,7 @@
     &__menu1 {
       margin-left: 4rem;
     }
-  
+
     &__menu2 {
       margin-right: 4rem;
     }
