@@ -121,4 +121,13 @@
     margin-right: 4rem;
   }
 }
+
+.contenedor1 {
+  width: 20rem;
+  height: 8rem;
+  background-image: url("../imagenes/mapas estelares.png");
+  background-size: cover;
+  background-position: 70% 60%;
+  margin: 2rem 1rem;
+}
 /*# sourceMappingURL=styles.css.map */

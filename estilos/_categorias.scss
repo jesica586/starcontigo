@@ -1,0 +1,20 @@
+@import"responsive";
+
+// movil responsive
+
+$listaDeContenedores: mapas-estelares,
+cuadros-musicales,
+cuadros-personalizados,
+llaveros,
+polaroids;
+
+@each $contenedor in $listaDeContenedores {
+    width: 20rem;
+    height: 8rem;
+    background-size: cover;
+    background-position: 70% 60%;
+    margin: 2rem 1rem;
+    .#{$contenedor}{
+ background-image: url('/imagenes/#{$listaDeContenedores}.png');
+}
+}
