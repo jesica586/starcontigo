@@ -8,7 +8,6 @@
   background-image: url("../imagenes/fondo.png");
   background-color: #FFD9ED80;
   background-size: cover;
-  height: auto;
   width: 100%;
   display: grid;
   grid-template-areas:
@@ -63,14 +62,34 @@
     grid-template-columns: 45% 20% auto;
     align-items: center;
 
-
     &__menu-items {
       padding: 0.5rem;
       font-size: 1rem;
     }
-
-
-    // header laptop responsive
   }
+  
+  // header laptop responsive
 
+  @include desktop {
+    grid-template-rows: 6rem;
+    grid-template-columns: 30% 40% auto;
+
+    &__logo-imagen {
+      width: 6rem;
+      margin: 1rem;
+    }
+
+    &__menu-items {
+      padding: 1rem;
+      font-size: 1rem;
+    }
+
+    &__menu1 {
+      margin-left: 3rem;
+    }
+  
+    &__menu2 {
+      margin-right: 3rem;
+    }
+  }
 }

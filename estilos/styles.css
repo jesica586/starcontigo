@@ -12,7 +12,6 @@
   background-image: url("../imagenes/fondo.png");
   background-color: #FFD9ED80;
   background-size: cover;
-  height: auto;
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -85,6 +84,29 @@
   .header__menu-items {
     padding: 0.5rem;
     font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .header {
+    -ms-grid-rows: 6rem;
+        grid-template-rows: 6rem;
+    -ms-grid-columns: 30% 40% auto;
+        grid-template-columns: 30% 40% auto;
+  }
+  .header__logo-imagen {
+    width: 6rem;
+    margin: 1rem;
+  }
+  .header__menu-items {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  .header__menu1 {
+    margin-left: 3rem;
+  }
+  .header__menu2 {
+    margin-right: 3rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
