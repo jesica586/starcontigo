@@ -76,18 +76,15 @@
         grid-template-areas: "menu1 logo menu2";
     -ms-grid-rows: 5rem;
         grid-template-rows: 5rem;
-    -ms-grid-columns: 55% 5% auto;
-        grid-template-columns: 55% 5% auto;
+    -ms-grid-columns: 45% 20% auto;
+        grid-template-columns: 45% 20% auto;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
   .header__menu-items {
+    padding: 0.5rem;
     font-size: 1rem;
-  }
-  .header__menu1 {
-    -ms-flex-line-pack: center;
-        align-content: center;
   }
 }
 /*# sourceMappingURL=styles.css.map */
