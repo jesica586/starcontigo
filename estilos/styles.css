@@ -146,8 +146,6 @@
   height: 5rem;
   background-size: cover;
   background-position: 70% 60%;
-  margin: 2rem 1rem;
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,14 +155,62 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 1rem 1rem;
 }
 
 .contenedor__titulo {
   background-color: rgba(255, 255, 255, 0.83);
+  margin-bottom: -0.5rem;
   text-align: center;
-  position: absolute;
   width: 100%;
   font-size: 3vw;
-  padding: 0.5rem;
+  padding: 1.5vw;
+}
+
+@media only screen and (min-width: 768px) {
+  .categorias {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "mapas-estelares cuadros-musicales" "cuadros-personalizados cuadros-personalizados" "polaroids llaveros";
+    margin: 2rem 0;
+  }
+  .mapas-estelares {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: mapas-estelares;
+  }
+  .cuadros-musicales {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: cuadros-musicales;
+  }
+  .cuadros-personalizados {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: cuadros-personalizados;
+  }
+  .polaroids {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: polaroids;
+  }
+  .llaveros {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: llaveros;
+  }
+  .contenedor {
+    height: 15rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 1024px) {
+  .contenedor {
+    height: 20rem;
+  }
+  .contenedor__titulo {
+    font-size: 1.8vw;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
