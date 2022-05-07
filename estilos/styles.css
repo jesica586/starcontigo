@@ -213,4 +213,41 @@
     font-size: 1.8vw;
   }
 }
+
+footer {
+  background-image: url("../imagenes/fondo.png");
+  background-color: #FFD9ED80;
+  background-size: cover;
+  text-align: center;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.5rem;
+}
+
+.footer__logo {
+  height: 8vw;
+}
+
+.footer__logo--reducido {
+  width: 5vw;
+}
+
+.footer__titulo {
+  font-size: 3vw;
+  margin: 0 0.7rem 0.3rem 0.7rem;
+}
+
+.footer__parrafo {
+  font-size: 2.3vw;
+  margin: 0;
+}
+
+.footer__copyrights {
+  font-size: 2vw;
+  margin: 0;
+}
 /*# sourceMappingURL=styles.css.map */

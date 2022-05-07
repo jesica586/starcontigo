@@ -1,0 +1,36 @@
+@import"responsive";
+
+footer{
+    background-image: url("../imagenes/fondo.png");
+    background-color: #FFD9ED80;
+    background-size: cover;
+    text-align:center;
+}
+
+.footer{
+    display:flex;
+    padding: 1.5rem;
+
+    &__logo{
+        height: 8vw;
+    }
+
+    &__logo--reducido{
+        width: 5vw;
+    }
+
+    &__titulo{
+        font-size: 3vw;
+        margin: 0 0.7rem 0.3rem 0.7rem;
+    }
+
+    &__parrafo{
+        font-size: 2.3vw;
+        margin: 0;
+    }
+
+    &__copyrights{
+        font-size: 2vw;
+        margin: 0;
+    }
+}
