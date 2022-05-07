@@ -155,7 +155,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 1rem 1rem;
+  margin: 2rem 2rem;
 }
 
 .contenedor__titulo {
@@ -172,7 +172,7 @@
     display: -ms-grid;
     display: grid;
         grid-template-areas: "mapas-estelares cuadros-musicales" "cuadros-personalizados cuadros-personalizados" "polaroids llaveros";
-    margin: 2rem 0;
+    margin: 5rem;
   }
   .mapas-estelares {
     -ms-grid-row: 1;
