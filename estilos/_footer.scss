@@ -13,15 +13,10 @@ footer {
     padding: 1.5rem;
 
     &__logo {
-        height: 8vw;
-        display: flex;
-        float: left;
+        height: 3vw;
+        margin: 0.2rem;
     }
-
-    &__logo--reducido {
-        width: 5vw;
-    }
-
+    
     &__titulo {
         font-size: 3vw;
     }
@@ -34,5 +29,32 @@ footer {
     &__copyrights {
         font-size: 2vw;
         margin: 0;
+    }
+
+    @include tablet{
+        padding: 4rem;
+
+        &__titulo {
+            font-size: 2vw;
+            margin-bottom: 1.3rem;
+        }
+
+        &__copyrights {
+            font-size: 1.5vw;
+        }
+    }
+
+    @include desktop{
+        &__titulo{
+            font-size: 1.5vw;
+        }
+
+        &__parrafo {
+            font-size: 1.2vw;
+        }
+
+        &__copyrights {
+            font-size: 1vw;
+        }
     }
 }
