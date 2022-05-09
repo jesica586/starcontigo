@@ -7,40 +7,42 @@ footer {
     text-align: center;
 }
 
+.iconify {
+    height: 3.5vw;
+    width: auto;
+}
+
 .footer {
     display: flex;
     justify-content: space-evenly;
     padding: 1.5rem;
-    align-items: center;
+    align-items: flex-start;
+
 
     &__logo {
         height: 4vw;
         margin-right: 0.5rem;
-        margin-top: -0.5rem;
     }
 
-    .iconify{
-        height: 3.5vw;
-        width:auto;
-        margin-top: -0.5rem;
-    }
-    
+
     &__titulo {
         font-size: 3vw;
     }
 
+
     &__parrafo {
         font-size: 1.8vw;
-        margin: 0.3rem;
-        font-weight:normal;
+        font-weight: normal;
+        margin: 0;
     }
+
 
     &__copyrights {
         font-size: 2vw;
         margin: 0;
     }
 
-    @include tablet{
+    @include tablet {
         padding: 4rem;
 
         &__titulo {
@@ -53,8 +55,8 @@ footer {
         }
     }
 
-    @include desktop{
-        &__titulo{
+    @include desktop {
+        &__titulo {
             font-size: 1.5vw;
         }
 

@@ -221,6 +221,11 @@ footer {
   text-align: center;
 }
 
+.iconify {
+  height: 3.5vw;
+  width: auto;
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -229,21 +234,14 @@ footer {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding: 1.5rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .footer__logo {
   height: 4vw;
   margin-right: 0.5rem;
-  margin-top: -0.5rem;
-}
-
-.footer .iconify {
-  height: 3.5vw;
-  width: auto;
-  margin-top: -0.5rem;
 }
 
 .footer__titulo {
@@ -252,8 +250,8 @@ footer {
 
 .footer__parrafo {
   font-size: 1.8vw;
-  margin: 0.3rem;
   font-weight: normal;
+  margin: 0;
 }
 
 .footer__copyrights {
