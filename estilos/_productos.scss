@@ -1,1 +1,76 @@
 @import"responsive";
+
+// BANNER DE LAS PÁGINAS DE PRODUCTOS
+
+.banner{
+    display: flex;
+    align-items: center;
+    
+    &__imagen{
+        height: 8rem;
+        width: 100%;
+        object-fit: cover;
+        opacity: 0.6;
+    }
+
+    &__titulo{
+        background-color: rgba(255, 255, 255, 0.83);
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem;
+        position: absolute;
+        font-size: 1.2rem;
+    }
+
+    @include tablet{
+        &__imagen{
+            height: 15rem;
+        }
+
+        &__titulo{
+            font-size: 1.7rem;
+        }
+    }
+}
+
+.card{
+    border:0;
+}
+
+.container{
+    margin: 4rem;
+    margin-left:auto;
+    margin-right:auto;
+
+    &__card-imagen{
+        height: 8rem;
+        object-fit: cover;
+    }
+
+    &__card-titulo{
+        font-size:3vw;
+        text-align:center;
+    }
+
+    &__card-precio{
+        font-size: 2.8vw;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    &__card-boton{
+        width:100%;
+        font-size: 2.8vw;
+        background-color: #FFD9ED;
+        border: 0;
+        padding: 0.3rem 2.5rem;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.12);
+    }
+
+    &__verProductos{
+        font-size: 1.3vw;
+        margin-top: 3rem;
+        text-align: center;
+        font-weight: 700;
+    }
+}
