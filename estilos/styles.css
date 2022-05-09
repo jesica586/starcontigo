@@ -324,9 +324,8 @@ footer {
 }
 
 .container {
-  margin: 4rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .container__card-imagen {
@@ -364,17 +363,28 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+  .container {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
   .container__card-titulo {
-    font-size: 1.3rem;
+    font-size: 0.8rem;
   }
   .container__card-precio {
-    font-size: 1rem;
+    font-size: 0.6rem;
   }
   .container__card-boton {
-    font-size: 1rem;
+    font-size: 0.6rem;
   }
   .container__verProductos {
     font-size: 0.9rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
   }
 }
 
