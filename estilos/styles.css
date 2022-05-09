@@ -368,4 +368,103 @@ footer {
     font-size: 0.9rem;
   }
 }
+
+.formulario {
+  margin: 4rem 1rem;
+}
+
+.formulario__grid {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "nombre apellido" "provincia localidad" "email celular" "mensaje mensaje";
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+}
+
+.formulario .nombre {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: nombre;
+}
+
+.formulario .apellido {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: apellido;
+}
+
+.formulario #provincia {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: provincia;
+}
+
+.formulario #localidad {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: localidad;
+}
+
+.formulario #email {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: email;
+}
+
+.formulario #celular {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: celular;
+}
+
+.formulario #mensaje {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: mensaje;
+}
+
+.formulario #boton {
+  grid-area: boton;
+}
+
+.formulario__datos {
+  font-size: 10px;
+  border: 1px solid #4b4b4b9a;
+  padding: 4px;
+}
+
+.formulario__mensaje {
+  font-size: 10px;
+  border: 1px solid #4b4b4b9a;
+  padding: 4px;
+  width: 100%;
+}
+
+.formulario__botonForm {
+  font-size: 10px;
+  padding: 0.3rem 5rem;
+  background-color: #FFD9ED;
+  border: 0;
+}
+
+.formulario__boton {
+  text-align: center;
+  margin: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .formulario {
+    margin: 8rem 10rem;
+  }
+  .formulario__datos, .formulario__mensaje, .formulario__botonForm {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .formulario__datos, .formulario__mensaje, .formulario__botonForm {
+    font-size: 18px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
