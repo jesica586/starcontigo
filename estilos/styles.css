@@ -229,11 +229,21 @@ footer {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer__logo {
-  height: 3vw;
-  margin: 0.2rem;
+  height: 4vw;
+  margin-right: 0.5rem;
+  margin-top: -0.5rem;
+}
+
+.footer .iconify {
+  height: 3.5vw;
+  width: auto;
+  margin-top: -0.5rem;
 }
 
 .footer__titulo {
@@ -243,6 +253,7 @@ footer {
 .footer__parrafo {
   font-size: 1.8vw;
   margin: 0.3rem;
+  font-weight: normal;
 }
 
 .footer__copyrights {
@@ -376,7 +387,7 @@ footer {
 .formulario__grid {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "nombre apellido" "provincia localidad" "email celular" "mensaje mensaje";
+      grid-template-areas: "nombre apellido" "provincia localidad" "email celular";
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
 }
@@ -393,39 +404,32 @@ footer {
   grid-area: apellido;
 }
 
-.formulario #provincia {
+.formulario .provincia {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: provincia;
 }
 
-.formulario #localidad {
+.formulario .localidad {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: localidad;
 }
 
-.formulario #email {
+.formulario .email {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: email;
 }
 
-.formulario #celular {
+.formulario .celular {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: celular;
 }
 
-.formulario #mensaje {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
+.formulario .mensaje {
   grid-area: mensaje;
-}
-
-.formulario #boton {
-  grid-area: boton;
 }
 
 .formulario__datos {
@@ -439,6 +443,7 @@ footer {
   border: 1px solid #4b4b4b9a;
   padding: 4px;
   width: 100%;
+  margin-top: 1rem;
 }
 
 .formulario__botonForm {

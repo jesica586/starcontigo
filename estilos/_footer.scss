@@ -11,10 +11,18 @@ footer {
     display: flex;
     justify-content: space-evenly;
     padding: 1.5rem;
+    align-items: center;
 
     &__logo {
-        height: 3vw;
-        margin: 0.2rem;
+        height: 4vw;
+        margin-right: 0.5rem;
+        margin-top: -0.5rem;
+    }
+
+    .iconify{
+        height: 3.5vw;
+        width:auto;
+        margin-top: -0.5rem;
     }
     
     &__titulo {
@@ -24,6 +32,7 @@ footer {
     &__parrafo {
         font-size: 1.8vw;
         margin: 0.3rem;
+        font-weight:normal;
     }
 
     &__copyrights {
