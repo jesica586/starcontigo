@@ -73,4 +73,22 @@
         text-align: center;
         font-weight: 700;
     }
+
+    @include tablet{
+        &__card-titulo{
+            font-size: 1.3rem;
+        }
+
+        &__card-precio{
+            font-size: 1rem;
+        }
+
+        &__card-boton{
+            font-size: 1rem;
+        }
+
+        &__verProductos{
+            font-size: 0.9rem;
+        }
+    }
 }

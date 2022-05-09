@@ -353,4 +353,19 @@ footer {
   text-align: center;
   font-weight: 700;
 }
+
+@media only screen and (min-width: 768px) {
+  .container__card-titulo {
+    font-size: 1.3rem;
+  }
+  .container__card-precio {
+    font-size: 1rem;
+  }
+  .container__card-boton {
+    font-size: 1rem;
+  }
+  .container__verProductos {
+    font-size: 0.9rem;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
