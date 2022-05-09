@@ -157,6 +157,16 @@
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .banner__imagen {
+    height: 20rem;
+  }
+  .banner__titulo {
+    font-size: 2rem;
+    padding: 1.5rem;
+  }
+}
+
 .mapas-estelares {
   background-image: url("../imagenes/mapas-estelares.png");
 }

@@ -136,4 +136,15 @@
       font-size: 1.7rem;
     }
   }
+
+  @include desktop {
+    &__imagen {
+      height: 20rem;
+    }
+
+    &__titulo {
+      font-size: 2rem;
+      padding: 1.5rem;
+    }
+  }
 }
