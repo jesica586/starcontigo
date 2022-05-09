@@ -1,0 +1,59 @@
+@import"responsive";
+
+.error404 {
+    text-align: center;
+    padding: 3rem 0;
+
+    &__titulo {
+        font-size: 7rem;
+        margin: 1rem;
+    }
+
+    &__parrafo {
+        font-size: 1rem;
+        margin: 1rem;
+    }
+
+    &__boton {
+        font-size: 0.8rem;
+        background-color: #FFD9ED;
+        padding: 6px 30px;
+        border: 0;
+    }
+
+    @include tablet {
+        margin: 3rem;
+
+        &__titulo {
+            font-size: 9rem;
+        }
+
+        &__parrafo {
+            font-size: 1.5rem;
+            margin: 2rem;
+        }
+
+        &__boton {
+            font-size: 1rem;
+            padding: 8px 50px;
+        }
+    }
+
+    @include desktop {
+        margin: 2rem;
+
+        &__titulo {
+            font-size: 5rem;
+        }
+
+        &__parrafo {
+            font-size: 1.5rem;
+            margin: 1rem;
+        }
+
+        &__boton {
+            font-size: 0.7rem;
+            padding: 8px 50px;
+        }
+    }
+}
