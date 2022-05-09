@@ -1,38 +1,5 @@
 @import"responsive";
 
-// BANNER DE LAS PÁGINAS DE PRODUCTOS
-
-.banner {
-    display: flex;
-    align-items: center;
-
-    &__imagen {
-        height: 8rem;
-        width: 100%;
-        object-fit: cover;
-        opacity: 0.6;
-    }
-
-    &__titulo {
-        background-color: rgba(255, 255, 255, 0.83);
-        width: 100%;
-        text-align: center;
-        padding: 0.5rem;
-        position: absolute;
-        font-size: 1.2rem;
-    }
-
-    @include tablet {
-        &__imagen {
-            height: 15rem;
-        }
-
-        &__titulo {
-            font-size: 1.7rem;
-        }
-    }
-}
-
 .card {
     border: 0;
 }
@@ -97,6 +64,18 @@
     @include desktop {
         margin-top: 8rem;
         margin-bottom: 8rem;
+
+        &__card-titulo {
+            font-size: 1rem;
+        }
+
+        &__card-precio {
+            font-size: 0.8rem;
+        }
+
+        &__card-boton {
+            font-size: 0.8rem;
+        }
     }
 
 }

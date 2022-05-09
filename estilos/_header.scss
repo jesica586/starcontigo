@@ -91,7 +91,7 @@
 
     &__menu-items {
       padding: 1rem;
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
 
     &__menu1 {
@@ -100,6 +100,40 @@
 
     &__menu2 {
       margin-right: 4rem;
+    }
+  }
+}
+
+
+// BANNER 
+
+.banner {
+  display: flex;
+  align-items: center;
+
+  &__imagen {
+    height: 8rem;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+  }
+
+  &__titulo {
+    background-color: rgba(255, 255, 255, 0.83);
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    position: absolute;
+    font-size: 1.2rem;
+  }
+
+  @include tablet {
+    &__imagen {
+      height: 15rem;
+    }
+
+    &__titulo {
+      font-size: 1.7rem;
     }
   }
 }
