@@ -1,5 +1,6 @@
 @import"responsive";
-
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap');
 // movil responsive
 
 @each $contenedores in mapas-estelares,
@@ -69,4 +70,23 @@ llaveros {
             }
         }
     }
+}
+@include desktop{
+    .textoNosotros{
+        font-size: 1.5em;
+    }
+
+}
+.textoNosotros{
+    font-family: 'Cinzel', serif; 
+    text-align:center;
+  }
+   
+.textoRosa{
+    color: #FFD9ED !important;
+    text-align: center;
+    font-family: 'Libre Bodoni', serif;
+}
+.textBlack{
+    font-family: 'Libre Bodoni', serif;
 }
