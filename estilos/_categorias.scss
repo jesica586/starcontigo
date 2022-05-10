@@ -2,11 +2,9 @@
 
 // movil responsive
 
-@each $contenedores in mapas-estelares,
-cuadros-musicales,
-cuadros-personalizados,
+@each $contenedores in llaveros,
 polaroids,
-llaveros {
+cuadros {
     .#{$contenedores} {
         background-image: url("../imagenes/#{$contenedores}.jpg");
     }
@@ -39,17 +37,14 @@ llaveros {
     .categorias {
         display: grid;
         grid-template-areas:
-            "mapas-estelares cuadros-musicales"
-            "cuadros-personalizados cuadros-personalizados"
-            "polaroids llaveros";
+            "llaveros polaroids"
+            "cuadros cuadros";
         margin: 5rem;
     }
 
-    @each $contenedores in mapas-estelares,
-    cuadros-musicales,
-    cuadros-personalizados,
+    @each $contenedores in llaveros,
     polaroids,
-    llaveros {
+    cuadros {
         .#{$contenedores} {
             grid-area: #{$contenedores};
         }

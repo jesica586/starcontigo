@@ -167,24 +167,16 @@
   }
 }
 
-.mapas-estelares {
-  background-image: url("../imagenes/mapas-estelares.jpg");
-}
-
-.cuadros-musicales {
-  background-image: url("../imagenes/cuadros-musicales.jpg");
-}
-
-.cuadros-personalizados {
-  background-image: url("../imagenes/cuadros-personalizados.jpg");
+.llaveros {
+  background-image: url("../imagenes/llaveros.jpg");
 }
 
 .polaroids {
   background-image: url("../imagenes/polaroids.jpg");
 }
 
-.llaveros {
-  background-image: url("../imagenes/llaveros.jpg");
+.cuadros {
+  background-image: url("../imagenes/cuadros.jpg");
 }
 
 .contenedor {
@@ -216,34 +208,24 @@
   .categorias {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "mapas-estelares cuadros-musicales" "cuadros-personalizados cuadros-personalizados" "polaroids llaveros";
+        grid-template-areas: "llaveros polaroids" "cuadros cuadros";
     margin: 5rem;
   }
-  .mapas-estelares {
+  .llaveros {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
-    grid-area: mapas-estelares;
+    grid-area: llaveros;
   }
-  .cuadros-musicales {
+  .polaroids {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
-    grid-area: cuadros-musicales;
+    grid-area: polaroids;
   }
-  .cuadros-personalizados {
+  .cuadros {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
-    grid-area: cuadros-personalizados;
-  }
-  .polaroids {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    grid-area: polaroids;
-  }
-  .llaveros {
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
-    grid-area: llaveros;
+    grid-area: cuadros;
   }
   .contenedor {
     height: 15rem;
