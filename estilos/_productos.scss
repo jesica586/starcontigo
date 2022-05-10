@@ -5,13 +5,12 @@
     margin: 1rem;
 }
 
-
 .container {
     margin-top: 4rem;
     margin-bottom: 4rem;
 
     &__card-imagen {
-        height: 12rem;
+        height: 90vw;
         object-fit: cover;
     }
 
@@ -46,17 +45,17 @@
         margin: 6rem auto;
 
         &__card-imagen {
-            height: 14rem;
+            height: 30vw;
             width: auto;
         }
 
         &__card-titulo {
-            font-size: 1.1rem;
+            font-size: 0.8rem;
         }
 
         &__card-precio {
-            font-size: 0.85rem;
-            height: 3.5rem;
+            font-size: 0.7rem;
+            height: 6rem;
             display:flex;
             align-items: center;
             justify-content: center;
@@ -74,13 +73,13 @@
     @include desktop {
 
         .card {
-            margin: auto 1rem;
+            margin: 2rem 1rem;
         }
 
         margin: 8rem auto;
 
         &__card-imagen {
-            height: 20rem;
+            height: 28vw;
         }
 
         &__card-titulo {

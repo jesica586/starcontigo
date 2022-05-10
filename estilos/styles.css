@@ -168,23 +168,23 @@
 }
 
 .mapas-estelares {
-  background-image: url("../imagenes/mapas-estelares.png");
+  background-image: url("../imagenes/mapas-estelares.jpg");
 }
 
 .cuadros-musicales {
-  background-image: url("../imagenes/cuadros-musicales.png");
+  background-image: url("../imagenes/cuadros-musicales.jpg");
 }
 
 .cuadros-personalizados {
-  background-image: url("../imagenes/cuadros-personalizados.png");
+  background-image: url("../imagenes/cuadros-personalizados.jpg");
 }
 
 .polaroids {
-  background-image: url("../imagenes/polaroids.png");
+  background-image: url("../imagenes/polaroids.jpg");
 }
 
 .llaveros {
-  background-image: url("../imagenes/llaveros.png");
+  background-image: url("../imagenes/llaveros.jpg");
 }
 
 .contenedor {
@@ -340,7 +340,7 @@ footer {
 }
 
 .container__card-imagen {
-  height: 12rem;
+  height: 90vw;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -378,15 +378,15 @@ footer {
     margin: 6rem auto;
   }
   .container__card-imagen {
-    height: 14rem;
+    height: 30vw;
     width: auto;
   }
   .container__card-titulo {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
   }
   .container__card-precio {
-    font-size: 0.85rem;
-    height: 3.5rem;
+    font-size: 0.7rem;
+    height: 6rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -410,10 +410,10 @@ footer {
     margin: 8rem auto;
   }
   .container .card {
-    margin: auto 1rem;
+    margin: 2rem 1rem;
   }
   .container__card-imagen {
-    height: 20rem;
+    height: 28vw;
   }
   .container__card-titulo {
     font-size: 1.2rem;
