@@ -3,8 +3,7 @@
 // movil responsive
 
 @each $contenedores in llaveros,
-polaroids,
-cuadros {
+polaroids, cuadros {
     .#{$contenedores} {
         background-image: url("../imagenes/#{$contenedores}.jpg");
     }
@@ -39,14 +38,18 @@ cuadros {
         grid-template-areas:
             "llaveros polaroids"
             "cuadros cuadros";
-        margin: 5rem;
-    }
+        margin: 4rem;
 
-    @each $contenedores in llaveros,
-    polaroids,
-    cuadros {
-        .#{$contenedores} {
-            grid-area: #{$contenedores};
+        &__cuadros{
+            grid-area:cuadros;
+        }
+
+        &__fotografias{
+            grid-area: fotografias,
+        }
+
+        &__llaveros{
+            grid-area:llaveros;
         }
     }
 

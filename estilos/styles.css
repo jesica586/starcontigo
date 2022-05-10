@@ -209,23 +209,21 @@
     display: -ms-grid;
     display: grid;
         grid-template-areas: "llaveros polaroids" "cuadros cuadros";
-    margin: 5rem;
+    margin: 4rem;
   }
-  .llaveros {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: llaveros;
-  }
-  .polaroids {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: polaroids;
-  }
-  .cuadros {
+  .categorias__cuadros {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: cuadros;
+  }
+  .categorias__fotografias {
+    grid-area: fotografias;
+  }
+  .categorias__llaveros {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: llaveros;
   }
   .contenedor {
     height: 15rem;
