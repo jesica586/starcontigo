@@ -15,8 +15,7 @@
   width: 100%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "logo logo logo"
- "menu1 none menu2";
+      grid-template-areas: "logo logo logo" "menu1 none menu2";
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
   -ms-grid-columns: auto auto auto;
@@ -209,8 +208,7 @@
   .categorias {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "llaveros polaroids"
- "cuadros cuadros";
+        grid-template-areas: "llaveros polaroids" "cuadros cuadros";
     margin: 4rem;
   }
   .categorias__cuadros {
@@ -227,6 +225,15 @@
     -ms-grid-column: 1;
     grid-area: llaveros;
   }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 1024px) {
+  .categorias {
+    margin: 7rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
   .contenedor {
     height: 15rem;
   }
@@ -234,7 +241,7 @@
 
 @media only screen and (min-width: 768px) and (min-width: 1024px) {
   .contenedor {
-    height: 20rem;
+    height: 25rem;
   }
   .contenedor__titulo {
     font-size: 1.8vw;
@@ -416,9 +423,7 @@ footer {
 .formulario__grid {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "nombre apellido"
- "provincia localidad"
- "email celular";
+      grid-template-areas: "nombre apellido" "provincia localidad" "email celular";
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
 }
@@ -578,8 +583,8 @@ footer {
 .titulos {
   font-family: 'Permanent Marker', cursive;
 }
-/*# sourceMappingURL=styles.css.map */
-.btn-wp{
+
+.btn-wp {
   position: fixed;
   width: 55px;
   height: 55px;
@@ -591,10 +596,13 @@ footer {
   border-radius: 55px;
   text-align: center;
   font-size: 35px;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.7);
   z-index: 100;
 }
-.btn-wp:hover{
+
+.btn-wp:hover {
   color: #0df053;
   background: #fff;
 }
+/*# sourceMappingURL=styles.css.map */
