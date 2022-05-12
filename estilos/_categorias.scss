@@ -10,7 +10,7 @@ polaroids, cuadros {
 }
 
 .contenedor {
-    height: 5rem;
+    height: 8rem;
     background-size: cover;
     background-position: 70% 60%;
     display: flex;
@@ -23,8 +23,15 @@ polaroids, cuadros {
         margin-bottom: -0.5rem;
         text-align: center;
         width: 100%;
-        font-size: 3vw;
+        font-size: 6vw;
         padding: 1.5vw;
+        cursor: hand;
+        cursor: pointer;
+        font-family: "Nunito Sans", sans-serif;
+        letter-spacing: 0.1rem;
+        -webkit-text-stroke: 1.1px black;
+        color: transparent!important;
+        font-weight: 900;
     }
 }
 
@@ -33,12 +40,19 @@ polaroids, cuadros {
 
 @include tablet {
 
+    .contenedor{
+        &__titulo{
+            font-size: 4vw;
+            -webkit-text-stroke: 1.1px black;
+        }
+    }
+
     .categorias {
         display: grid;
         grid-template-areas:
             "llaveros polaroids"
             "cuadros cuadros";
-        margin: 4rem;
+        margin: 1rem;
 
         &__cuadros{
             grid-area:cuadros;
@@ -53,12 +67,13 @@ polaroids, cuadros {
         }
 
         @include desktop{
-            margin: 7rem;
+            margin: 8vw;
         }
     }
 
     .contenedor {
         height: 15rem;
+        margin: 1rem;
 
         // desktop responsive
 
@@ -66,7 +81,7 @@ polaroids, cuadros {
             height: 25rem;
 
             &__titulo {
-                font-size: 1.8vw;
+                font-size: 3vw;
             }
         }
     }

@@ -67,8 +67,10 @@
 
 .header__menu-items {
   padding: 1.5vw;
-  font-size: 2.8vw;
+  font-size: 2.2vw;
   margin-bottom: 0.5rem;
+  font-family: 'Cinzel', serif;
+  font-weight: 500;
 }
 
 @media only screen and (min-width: 768px) {
@@ -88,7 +90,7 @@
   }
   .header__menu-items {
     padding: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     margin: 1rem 0 0 0;
   }
   .header__menu1 {
@@ -112,7 +114,7 @@
   }
   .header__menu-items {
     padding: 1rem;
-    font-size: 1.1rem;
+    font-size: 1.25vw;
   }
   .header__menu1 {
     margin-left: 4rem;
@@ -145,7 +147,12 @@
   text-align: center;
   padding: 0.5rem;
   position: absolute;
-  font-size: 1.2rem;
+  font-size: 1.2em;
+  font-family: "Nunito Sans", sans-serif;
+  letter-spacing: 0.1rem;
+  -webkit-text-stroke: 1.8px black;
+  color: transparent !important;
+  font-weight: 900;
 }
 
 @media only screen and (min-width: 768px) {
@@ -162,7 +169,7 @@
     height: 20rem;
   }
   .banner__titulo {
-    font-size: 2rem;
+    font-size: 3rem;
     padding: 1.5rem;
   }
 }
@@ -180,7 +187,7 @@
 }
 
 .contenedor {
-  height: 5rem;
+  height: 8rem;
   background-size: cover;
   background-position: 70% 60%;
   display: -webkit-box;
@@ -200,16 +207,27 @@
   margin-bottom: -0.5rem;
   text-align: center;
   width: 100%;
-  font-size: 3vw;
+  font-size: 6vw;
   padding: 1.5vw;
+  cursor: hand;
+  cursor: pointer;
+  font-family: "Nunito Sans", sans-serif;
+  letter-spacing: 0.1rem;
+  -webkit-text-stroke: 1.1px black;
+  color: transparent !important;
+  font-weight: 900;
 }
 
 @media only screen and (min-width: 768px) {
+  .contenedor__titulo {
+    font-size: 4vw;
+    -webkit-text-stroke: 1.1px black;
+  }
   .categorias {
     display: -ms-grid;
     display: grid;
         grid-template-areas: "llaveros polaroids" "cuadros cuadros";
-    margin: 4rem;
+    margin: 1rem;
   }
   .categorias__cuadros {
     -ms-grid-row: 2;
@@ -229,13 +247,14 @@
 
 @media only screen and (min-width: 768px) and (min-width: 1024px) {
   .categorias {
-    margin: 7rem;
+    margin: 8vw;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .contenedor {
     height: 15rem;
+    margin: 1rem;
   }
 }
 
@@ -244,7 +263,7 @@
     height: 25rem;
   }
   .contenedor__titulo {
-    font-size: 1.8vw;
+    font-size: 3vw;
   }
 }
 
@@ -271,6 +290,7 @@ footer {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin-top: 4rem;
 }
 
 .footer__logo {
@@ -279,13 +299,19 @@ footer {
 }
 
 .footer__titulo {
-  font-size: 3vw;
+  font-size: 3.2vw;
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
 }
 
 .footer__parrafo {
-  font-size: 1.8vw;
+  font-size: 2.6vw;
   font-weight: normal;
   margin: 0;
+  cursor: pointer;
+  cursor: hand;
+  font-family: 'Cinzel', serif;
+  font-weight: 500;
 }
 
 .footer__copyrights {
@@ -296,10 +322,14 @@ footer {
 @media only screen and (min-width: 768px) {
   .footer {
     padding: 4rem;
+    margin-top: 6rem;
   }
   .footer__titulo {
     font-size: 2vw;
     margin-bottom: 1.3rem;
+  }
+  .footer__parrafo {
+    font-size: 1.4vw;
   }
   .footer__copyrights {
     font-size: 1.5vw;
@@ -307,14 +337,21 @@ footer {
 }
 
 @media only screen and (min-width: 1024px) {
+  .footer {
+    margin-top: 8rem;
+  }
   .footer__titulo {
     font-size: 1.5vw;
   }
   .footer__parrafo {
-    font-size: 1.2vw;
+    font-size: 1vw;
   }
   .footer__copyrights {
     font-size: 1vw;
+  }
+  .footer .email {
+    margin-top: -0.4rem;
+    margin-bottom: 0.8rem;
   }
 }
 
@@ -337,12 +374,15 @@ footer {
 .container__card-titulo {
   font-size: 4.5vw;
   text-align: center;
+  font-family: 'Nunito Sans',sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.5px;
 }
 
 .container__card-precio {
   font-size: 3.5vw;
   text-align: center;
-  font-weight: 400;
+  font-family: 'Nunito Sans',sans-serif;
 }
 
 .container__card-boton {
@@ -353,13 +393,17 @@ footer {
   padding: 0.3rem 2.5rem;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.12);
+  font-family: 'Nunito Sans',sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.3px;
 }
 
 .container__verProductos {
   font-size: 1.3vw;
   margin-top: 3rem;
   text-align: center;
-  font-weight: 700;
+  font-weight: 600;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 @media only screen and (min-width: 768px) {
@@ -487,6 +531,9 @@ footer {
   padding: 0.3rem 5rem;
   background-color: #FFD9ED;
   border: 0;
+  font-family: 'Nunito Sans',sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.3px;
 }
 
 .formulario__boton {
@@ -565,40 +612,167 @@ footer {
   }
 }
 
-.textoNosotros {
+.nosotros__banner {
+  height: 10rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.nosotros__titulo {
+  font-size: 4vw;
+  text-transform: uppercase;
+  line-height: 2px;
+  text-align: center;
+  margin: 3rem 1rem 1rem 1rem;
+  font-family: 'Libre Bodoni', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.7vw;
+}
+
+.nosotros__parrafoPresentacion {
+  margin: 2rem 3.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 3vw;
+}
+
+.nosotros__fondoRosa {
+  background-color: #FFD9ED;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nosotros__imagenRosa {
+  height: auto;
+  width: 5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 5vw 0 5vw 3vw;
+}
+
+.nosotros__parrafos {
+  font-size: 2.3vw;
+  text-align: center;
+  text-transform: uppercase;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 1rem;
   font-family: 'Cinzel', serif;
-  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.4vw;
+  line-height: 4.5vw;
 }
 
-.textoRosa {
-  color: #FFD9ED !important;
-  text-align: center;
-  font-family: 'Libre Bodoni', serif;
+.nosotros__fondoNegro {
+  background-color: black;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1.5rem 0;
 }
 
-.textMin {
-  font-family: 'Libre Bodoni', serif;
+.nosotros__imagenNegro {
+  height: auto;
+  width: 3.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 5vw;
 }
 
-.titulos {
-  font-family: 'Permanent Marker', cursive;
+.nosotros .negro {
+  color: white !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .nosotros__banner {
+    height: 20rem;
+  }
+  .nosotros__titulo {
+    font-size: 3vw;
+    margin: 5rem 2rem 2rem 2rem;
+  }
+  .nosotros__parrafoPresentacion {
+    font-size: 2vw;
+    margin: 0 23vw 5vw 23vw;
+  }
+  .nosotros__parrafos {
+    font-size: 1.5vw;
+    margin: 8vw 2vw;
+    letter-spacing: 0.3vw;
+    line-height: 3vw;
+  }
+  .nosotros__imagenRosa {
+    width: 35vw;
+  }
+  .nosotros__imagenNegro {
+    width: 25vw;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 1024px) {
+  .nosotros__banner {
+    height: 25rem;
+  }
+  .nosotros__titulo {
+    font-size: 2.5vw;
+    margin: 6rem 4rem 3rem 4rem;
+  }
+  .nosotros__parrafoPresentacion {
+    font-size: 1.6vw;
+    margin: 2rem 18rem;
+  }
+  .nosotros__parrafos {
+    margin: 5vw 8vw 5vw 5vw;
+    line-height: 3.1vw;
+    font-size: 1.5vw;
+    letter-spacing: 0.3vw;
+  }
+  .nosotros__imagenRosa {
+    width: 45vw;
+    margin: 2rem;
+  }
+  .nosotros__imagenNegro {
+    width: 30vw;
+  }
+  .nosotros__fondoRosa {
+    margin: 5rem 0;
+  }
+  .nosotros .margen {
+    margin-right: 8vw;
+    margin-left: 8vw;
+  }
 }
 
 .btn-wp {
   position: fixed;
-  width: 55px;
-  height: 55px;
-  line-height: 50px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
   bottom: 30px;
   right: 30px;
   background: #0df053;
   color: #fff;
   border-radius: 55px;
   text-align: center;
-  font-size: 35px;
+  font-size: 25px;
   -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.7);
           box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.7);
   z-index: 100;
+}
+
+@media only screen and (min-width: 768px) {
+  .btn-wp {
+    height: 55px;
+    width: 55px;
+    font-size: 35px;
+    line-height: 50px;
+  }
 }
 
 .btn-wp:hover,
@@ -608,10 +782,10 @@ footer {
 
 .btn-in {
   position: fixed;
-  width: 55px;
-  height: 55px;
-  line-height: 50px;
-  bottom: 110px;
+  width: 40px;
+  height: 40px;
+  line-height: 35px;
+  bottom: 90px;
   right: 30px;
   background: rgba(221, 42, 123, 0.6);
   color: #fff;
@@ -623,6 +797,21 @@ footer {
 }
 
 .btn-in__svg {
-  height: 30px;
+  height: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .btn-in__svg {
+    height: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .btn-in {
+    width: 55px;
+    height: 55px;
+    line-height: 50px;
+    bottom: 110px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
