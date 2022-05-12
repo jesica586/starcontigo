@@ -8,19 +8,22 @@ footer {
 }
 
 .iconify {
-    height: 3.5vw;
+    height: 6vw;
     width: auto;
+}
+
+.email{
+    padding-top: 0.2rem;
 }
 
 .footer {
     display: flex;
-    justify-content: space-evenly;
-    padding: 1.5rem;
-    align-items: flex-start;
+    flex-direction: column;
     margin-top: 4rem;
+    padding-top: 1rem;
 
     &__logo {
-        height: 4vw;
+        height: 6.5vw;
         margin-right: 0.5rem;
     }
 
@@ -28,6 +31,7 @@ footer {
         font-size: 3.2vw;
         font-family: 'Cinzel', serif;
         font-weight: 600;
+        margin: 1rem 0 0 0;
     }
 
     &__parrafo {
@@ -39,20 +43,29 @@ footer {
         font-family: 'Cinzel', serif;
         font-weight: 500;
     }
-
     
     &__copyrights {
-        font-size: 2vw;
-        margin: 0;
+        font-size: 2.2vw;
+        padding: 1rem 1rem 0.5rem 1rem;
+        margin:0;
     }
     
     @include tablet {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
         padding: 4rem;
-        margin-top:6rem;
+        align-items: flex-start;
+        margin-top: 6rem;
+
+        
+    &__logo {
+        height: 4.5vw;
+    }
 
         &__titulo {
             font-size: 2vw;
-            margin-bottom: 1.3rem;
+            margin-bottom: 0.5rem;
         }
 
         &__parrafo{
@@ -62,26 +75,30 @@ footer {
         &__copyrights {
             font-size: 1.5vw;
         }
+
+        .iconify {
+            height: 4vw;
+            width: auto;
+        }
     }
 
     @include desktop {
         margin-top: 8rem;
+
+        &__logo {
+            height: 4.5vw;
+        }
 
         &__titulo {
             font-size: 1.5vw;
         }
 
         &__parrafo {
-            font-size: 1vw;
+            font-size: 1.1vw;
         }
 
         &__copyrights {
             font-size: 1vw;
-        }
-
-        .email{
-            margin-top: -0.4rem;
-            margin-bottom: 0.8rem;
         }
     }
 }

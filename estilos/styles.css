@@ -275,26 +275,28 @@ footer {
 }
 
 .iconify {
-  height: 3.5vw;
+  height: 6vw;
   width: auto;
+}
+
+.email {
+  padding-top: 0.2rem;
 }
 
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding: 1.5rem;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 4rem;
+  padding-top: 1rem;
 }
 
 .footer__logo {
-  height: 4vw;
+  height: 6.5vw;
   margin-right: 0.5rem;
 }
 
@@ -302,6 +304,7 @@ footer {
   font-size: 3.2vw;
   font-family: 'Cinzel', serif;
   font-weight: 600;
+  margin: 1rem 0 0 0;
 }
 
 .footer__parrafo {
@@ -315,18 +318,35 @@ footer {
 }
 
 .footer__copyrights {
-  font-size: 2vw;
+  font-size: 2.2vw;
+  padding: 1rem 1rem 0.5rem 1rem;
   margin: 0;
 }
 
 @media only screen and (min-width: 768px) {
   .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     padding: 4rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     margin-top: 6rem;
+  }
+  .footer__logo {
+    height: 4.5vw;
   }
   .footer__titulo {
     font-size: 2vw;
-    margin-bottom: 1.3rem;
+    margin-bottom: 0.5rem;
   }
   .footer__parrafo {
     font-size: 1.4vw;
@@ -334,24 +354,27 @@ footer {
   .footer__copyrights {
     font-size: 1.5vw;
   }
+  .footer .iconify {
+    height: 4vw;
+    width: auto;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
   .footer {
     margin-top: 8rem;
   }
+  .footer__logo {
+    height: 4.5vw;
+  }
   .footer__titulo {
     font-size: 1.5vw;
   }
   .footer__parrafo {
-    font-size: 1vw;
+    font-size: 1.1vw;
   }
   .footer__copyrights {
     font-size: 1vw;
-  }
-  .footer .email {
-    margin-top: -0.4rem;
-    margin-bottom: 0.8rem;
   }
 }
 
