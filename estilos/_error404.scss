@@ -15,10 +15,18 @@
     }
 
     &__boton {
-        font-size: 0.8rem;
+        font-size: 3vw;
         background-color: #FFD9ED;
-        padding: 6px 30px;
         border: 0;
+        padding: 0.3rem 2.5rem;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.12);
+        font-family: 'Nunito Sans',sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.3px;
+    }
+
+    &__boton:hover{
+        background-color:rgb(252, 176, 220);
     }
 
     @include tablet {
@@ -40,19 +48,19 @@
     }
 
     @include desktop {
-        margin: 2rem;
+        margin: 0;
 
         &__titulo {
-            font-size: 5rem;
+            font-size: 10rem;
         }
 
         &__parrafo {
-            font-size: 1.5rem;
-            margin: 1rem;
+            font-size: 2rem;
+            margin: 3rem;
         }
 
         &__boton {
-            font-size: 0.7rem;
+            font-size: 1rem;
             padding: 8px 50px;
         }
     }
