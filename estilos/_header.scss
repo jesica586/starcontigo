@@ -54,6 +54,10 @@
     font-weight: 500;
   }
 
+  &__menu-items:hover{
+    font-weight: 600;
+  }
+
   // header tablet responsive
 
   @include tablet {
@@ -92,21 +96,19 @@
   @include desktop {
     grid-template-rows: 6rem;
     grid-template-columns: 30% 40% auto;
-
+    
     &__logo-imagen {
       width: 6rem;
       margin: 1rem;
     }
-
+    
     &__menu-items {
       padding: 1rem;
       font-size: 1.25vw;
-
-    // letter-spacing: 0.05vw;
-    }
-
-    &__menu1 {
-      margin-left: 4rem;
+  }
+  
+  &__menu1 {
+    margin-left: 4rem;
     }
 
     &__menu2 {

@@ -41,12 +41,20 @@
         letter-spacing: 0.3px;
     }
 
+    &__card-boton:hover{
+        background-color: rgb(252, 176, 220);
+    }
+    
     &__verProductos {
-        font-size: 1.3vw;
-        margin-top: 3rem;
+        font-size: 3vw;
+        margin-top: 2rem;
         text-align: center;
         font-weight: 600;
         font-family: "Nunito Sans", sans-serif;
+    }
+
+    &__verProductos:hover{
+        font-weight: 700;
     }
 
     @include tablet {
@@ -74,7 +82,7 @@
         }
 
         &__verProductos {
-            font-size: 0.9rem;
+            font-size: 0.6rem;
         }
     }
 
@@ -84,7 +92,7 @@
             margin: 2rem 1rem;
         }
 
-        margin: 8rem auto;
+        margin: 8rem auto 0rem auto;
 
         &__card-imagen {
             height: 28vw;
@@ -100,6 +108,9 @@
         }
 
         &__card-boton {
+            font-size: 0.8rem;
+        }
+        &__verProductos {
             font-size: 0.8rem;
         }
     }

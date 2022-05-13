@@ -73,6 +73,10 @@
   font-weight: 500;
 }
 
+.header__menu-items:hover {
+  font-weight: 600;
+}
+
 @media only screen and (min-width: 768px) {
   .header {
         grid-template-areas: "menu1 logo menu2";
@@ -219,6 +223,10 @@
   font-weight: 900;
 }
 
+.contenedor__titulo:hover {
+  color: pink !important;
+}
+
 @media only screen and (min-width: 768px) {
   .contenedor__titulo {
     font-size: 4vw;
@@ -316,6 +324,10 @@ footer {
   cursor: hand;
   font-family: 'Cinzel', serif;
   font-weight: 500;
+}
+
+.footer__parrafo:hover {
+  font-weight: 600;
 }
 
 .footer__copyrights {
@@ -422,12 +434,20 @@ footer {
   letter-spacing: 0.3px;
 }
 
+.container__card-boton:hover {
+  background-color: #fcb0dc;
+}
+
 .container__verProductos {
-  font-size: 1.3vw;
-  margin-top: 3rem;
+  font-size: 3vw;
+  margin-top: 2rem;
   text-align: center;
   font-weight: 600;
   font-family: "Nunito Sans", sans-serif;
+}
+
+.container__verProductos:hover {
+  font-weight: 700;
 }
 
 @media only screen and (min-width: 768px) {
@@ -458,13 +478,13 @@ footer {
     font-size: 0.8rem;
   }
   .container__verProductos {
-    font-size: 0.9rem;
+    font-size: 0.6rem;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .container {
-    margin: 8rem auto;
+    margin: 8rem auto 0rem auto;
   }
   .container .card {
     margin: 2rem 1rem;
@@ -480,6 +500,9 @@ footer {
     height: 6rem;
   }
   .container__card-boton {
+    font-size: 0.8rem;
+  }
+  .container__verProductos {
     font-size: 0.8rem;
   }
 }
@@ -558,6 +581,10 @@ footer {
   font-family: 'Nunito Sans',sans-serif;
   font-weight: 400;
   letter-spacing: 0.3px;
+}
+
+.formulario__botonForm:hover {
+  background-color: #fcb0dc;
 }
 
 .formulario__boton {
@@ -775,11 +802,11 @@ footer {
 
 .btn-wp {
   position: fixed;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
   bottom: 30px;
-  right: 30px;
+  right: 35px;
   background: #0df053;
   color: #fff;
   border-radius: 55px;
@@ -806,12 +833,12 @@ footer {
 
 .btn-in {
   position: fixed;
-  width: 40px;
-  height: 40px;
-  line-height: 35px;
+  width: 45px;
+  height: 45px;
+  line-height: 40px;
   bottom: 90px;
-  right: 30px;
-  background: rgba(221, 42, 123, 0.6);
+  right: 35px;
+  background: #ff4e9e;
   color: #fff;
   border-radius: 55px;
   text-align: center;
@@ -826,7 +853,7 @@ footer {
 
 @media only screen and (min-width: 768px) {
   .btn-in__svg {
-    height: 30px;
+    height: 27px;
   }
 }
 

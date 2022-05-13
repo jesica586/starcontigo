@@ -46,6 +46,10 @@ $font-size:10px;
        letter-spacing: 0.3px;
     }
 
+    &__botonForm:hover{
+        background-color: rgb(252, 176, 220);
+    }
+
     &__boton{
         text-align: center;
         margin: 1rem;
