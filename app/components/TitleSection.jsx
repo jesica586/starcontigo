@@ -3,27 +3,27 @@ import Link from 'next/link';
 
 const TitleSection = () => {
     return (
-        <div class="categorias">
-            <div class="categorias__llaveros">
+        <div className="categorias">
+            <div className="categorias__llaveros">
 
                 <Link href="/llaveros">
-                    <div class="contenedor llaveros">
-                        <h2 class="contenedor__titulo">LLAVEROS</h2>
+                    <div className="contenedor llaveros">
+                        <h2 className="contenedor__titulo">LLAVEROS</h2>
                     </div>
                 </Link>
 
             </div>
-            <div class="categorias__polaroids">
+            <div className="categorias__polaroids">
                 <Link href="/fotografias">
-                    <div class="contenedor polaroids">
-                        <h2 class="contenedor__titulo">POLAROIDS</h2>
+                    <div className="contenedor polaroids">
+                        <h2 className="contenedor__titulo">POLAROIDS</h2>
                     </div>
                 </Link>
             </div>
-            <div class="categorias__cuadros">
+            <div className="categorias__cuadros">
                 <Link href="/cuadros">
-                    <div class="contenedor cuadros">
-                        <h2 class="contenedor__titulo">CUADROS</h2>
+                    <div className="contenedor cuadros">
+                        <h2 className="contenedor__titulo">CUADROS</h2>
                     </div>
                 </Link>
             </div>

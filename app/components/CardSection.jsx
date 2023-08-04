@@ -36,7 +36,7 @@ const CardSection = (props) => {
 
 
         </div>
-            <div class="container__verProductos">
+            <div className="container__verProductos">
             <Link href="/productos">VER TODOS LOS PRODUCTOS</Link>
         </div>
         </>

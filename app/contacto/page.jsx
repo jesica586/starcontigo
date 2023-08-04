@@ -3,13 +3,13 @@ import React from 'react';
 const Page = () => {
     return (
         <div>
-            <div class="banner">
-                <img class="banner__imagen" src="/images/cuadros.jpg" alt="" />
-                <h2 class="banner__titulo">CONTACTO</h2>
+            <div className="banner">
+                <img className="banner__imagen" src="/images/cuadros.jpg" alt="" />
+                <h2 className="banner__titulo">CONTACTO</h2>
             </div>
-            <div class="formulario">
+            <div className="formulario">
                 <form action="mailto:starcontigomza@gmail.com?subject=CONSULTA" method="post" enctype="text/plain">
-                    <div class="formulario__grid">
+                    <div className="formulario__grid">
                         <input type="text" name="nombre" id="nombre" className="formulario__datos" autocomplete="off" placeholder="Nombre" required />
                         <input type="text" name="apellido" id="apellido" className="formulario__datos" autocomplete="off" placeholder="Apellido"
                             require />
@@ -23,7 +23,7 @@ const Page = () => {
                     </div>
                     <textarea name="mensaje" rows="4" cols="50" id="mensaje" className="formulario__mensaje" autocomplete="off" placeholder="Mensaje"
                         required></textarea>
-                    <div class="formulario__boton">
+                    <div className="formulario__boton">
                         <input id="boton" type="submit" value="ENVIAR" className="formulario__botonForm" />
                     </div>
                 </form>

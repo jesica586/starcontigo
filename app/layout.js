@@ -1,4 +1,3 @@
-'use client'
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Header from './components/Header'
@@ -15,12 +14,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <>
-      <Header />
-      {children}
-      <Footer />
-      <RRSS />
-    </>
-
+    <html lang="en">
+      <body className={inter.className}>
+        <Header />
+        {children}
+        <Footer />
+        <RRSS />
+      </body>
+    </html>
   )
 }
