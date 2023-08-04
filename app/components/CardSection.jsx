@@ -18,7 +18,7 @@ const CardSection = (props) => {
                             <img src={`/images/products/${items.title}.jpg`} alt={items.title} className="container__card-imagen" />
                             <div className="card-body">
                                 <h5 className="container__card-titulo">{items.title}</h5>
-                                <div>
+                                <div className="container_main">
                                     <span className="container__card-precio description">{items.description}</span>
                                     {items.prices.map((price, index) => (
                                         <div key={index} className="container__card-precio">

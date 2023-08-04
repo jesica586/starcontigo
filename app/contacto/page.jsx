@@ -10,21 +10,21 @@ const Page = () => {
             <div class="formulario">
                 <form action="mailto:starcontigomza@gmail.com?subject=CONSULTA" method="post" enctype="text/plain">
                     <div class="formulario__grid">
-                        <input type="text" name="nombre" id="nombre" class="formulario__datos" autocomplete="off" placeholder="Nombre" required />
-                        <input type="text" name="apellido" id="apellido" class="formulario__datos" autocomplete="off" placeholder="Apellido"
+                        <input type="text" name="nombre" id="nombre" className="formulario__datos" autocomplete="off" placeholder="Nombre" required />
+                        <input type="text" name="apellido" id="apellido" className="formulario__datos" autocomplete="off" placeholder="Apellido"
                             require />
-                        <input type="text" name="provincia" id="provincia" class="formulario__datos" autocomplete="off" placeholder="Provincia"
+                        <input type="text" name="provincia" id="provincia" className="formulario__datos" autocomplete="off" placeholder="Provincia"
                             required />
-                        <input type="text" name="localidad" id="localidad" class="formulario__datos" autocomplete="off" placeholder="Localidad"
+                        <input type="text" name="localidad" id="localidad" className="formulario__datos" autocomplete="off" placeholder="Localidad"
                             required />
-                        <input type="email" name="email" id="email" class="formulario__datos" autocomplete="off" placeholder="Email" required />
-                        <input type="tel" name="celular" id="celular" class="formulario__datos" autocomplete="off" placeholder="Celular"
+                        <input type="email" name="email" id="email" className="formulario__datos" autocomplete="off" placeholder="Email" required />
+                        <input type="tel" name="celular" id="celular" className="formulario__datos" autocomplete="off" placeholder="Celular"
                             required />
                     </div>
-                    <textarea name="mensaje" rows="4" cols="50" id="mensaje" class="formulario__mensaje" autocomplete="off" placeholder="Mensaje"
+                    <textarea name="mensaje" rows="4" cols="50" id="mensaje" className="formulario__mensaje" autocomplete="off" placeholder="Mensaje"
                         required></textarea>
                     <div class="formulario__boton">
-                        <input id="boton" type="submit" value="ENVIAR" class="formulario__botonForm" />
+                        <input id="boton" type="submit" value="ENVIAR" className="formulario__botonForm" />
                     </div>
                 </form>
             </div>
